@@ -4,10 +4,10 @@
     <nav>
       <nuxt-link to="/">Link 1</nuxt-link>&nbsp;|
       <nuxt-link to="/create">Link 2</nuxt-link>
-    </nav>
+      </nav>
   </div>
 </template>
-    
+
 <style scoped>
 .brand {
   font-family: "Montserrat", sans-serif;
