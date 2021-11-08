@@ -1,6 +1,8 @@
 <template>
   <div id="app">
     <NavBar />
+    Some shared layout content:
+    <slot />
     <Footer />
    </div>
 </template>
@@ -13,7 +15,9 @@ export default {
   components: {
     NavBar,
     Footer,
-    }
+    },
+    layout: "default",
+
  };
 </script>
     
