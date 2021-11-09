@@ -20,7 +20,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss">
 .footer {
   position: fixed;
   padding: 10px 10px 0px 10px;
@@ -28,8 +28,9 @@ export default {
   width: 100%;
   height: 40px;
   background: grey;
-}
-.footer__copyright {
+
+  &__copyright {
   font-size: 14px;
+}
 }
 </style>
