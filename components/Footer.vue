@@ -30,7 +30,7 @@ export default {
   background: grey;
 
   &__copyright {
-  font-size: 14px;
+  font-size: rem(14);
 }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <section class="secondary">
-    <Icon>
-     <Primary >
+    <!-- <Icon> -->
+     <Primary />
   </section>
 </template>
 

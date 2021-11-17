@@ -8,12 +8,12 @@
   </div>
 </template>
 
-<style scoped>
+<style lang="scss">
 .brand {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.5em;
-  color: #39b982;
+  color: $color-green;
   text-decoration: none;
 }
 .nav {
@@ -24,15 +24,20 @@
 }
 .nav .nav-item {
   box-sizing: border-box;
-  margin: 0 5px;
-  color: rgba(0, 0, 0, 0.5);
+  margin: 0 rem(5);
+  color: $color-black;
   text-decoration: none;
 }
 .nav .nav-item.router-link-exact-active {
-  color: #39b982;
-  border-bottom: solid 2px #39b982;
+  color: $color-green;
+  border-bottom: solid rem(2) $color-green;
 }
 .nav a {
   display: inline-block;
+  color: $color-green;
+
+  @media ($mobile-up) {
+    display: flex;
+  }
 }
 </style>
