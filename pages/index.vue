@@ -8,7 +8,7 @@
 <script lang="ts">
 import Primary from '@/components/Primary.vue'
 
-export default ({
+export default {
   name: 'index',
 
   components: {
@@ -18,8 +18,8 @@ export default ({
     return {
       title: 'Download Resume',
       paragraphe: 'paragraphe',
-      button: 'button'
+      button: 'button',
     }
   },
-})
+}
 </script>

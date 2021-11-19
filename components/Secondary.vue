@@ -1,7 +1,7 @@
 <template>
   <section class="secondary">
     <!-- <Icon> -->
-     <Primary />
+    <Primary />
   </section>
 </template>
 
@@ -9,12 +9,12 @@
 import Primary from './Primary.vue'
 
 export default {
-  name: "Secondary",
+  name: 'Secondary',
 
   props: {
     title: {
       type: String,
-      default:'',
+      default: '',
       required: true,
     },
   },
@@ -24,7 +24,7 @@ export default {
       Primary,
     }
   },
-};
+}
 </script>
 
 <style lang="scss">

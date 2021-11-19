@@ -2,34 +2,32 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true
+    node: true,
   },
-
   extends: [
     '@nuxtjs/eslint-config-typescript',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
-    'prettier/vue',
-    "plugin:prettier/recommended",
-    '@nuxtjs',
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
+    'plugin:jest-formatting/recommended',
   ],
-
-  "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint"],
-  "rules": {
-    "@typescript-eslint/rule-name": "error"
-  },
-
   rules: {
-    "vue/component-name-in-template-casing": ["error", "PascalCase"],
-    "no-console": process.env.NODE_ENV === "production" ? "error" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "error" : "off"
+    'vue/attribute-hyphenation': 'off',
+    camelcase: ['error', { allow: ['^Contentful_'] }],
   },
-  globals: {
-    $nuxt: true
-  },
-  parserOptions: {
-    parser: "babel-eslint"
-  }
+  overrides: [
+    {
+      files: ['**/*.{vue,ts}'],
+      rules: {
+        'import/named': 'off',
+      },
+    },
+    {
+      files: ['*.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 }
