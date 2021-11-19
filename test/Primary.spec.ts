@@ -1,8 +1,6 @@
 import { mount } from '@vue/test-utils'
 import Primary from '@/components/Primary.vue'
 import { Wrapper } from '@vue/test-utils'
-import Vue from 'vue'
-import { shallowMount } from '@/test/factory'
 
 describe('Primary', () => {
   it('renders a div', () => {
