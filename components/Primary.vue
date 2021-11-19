@@ -1,9 +1,9 @@
 <template>
-  <section class="primary">
+  <div class="primary">
     <h2 class="primary__title">{{ title }}</h2>
     <p class="primary__paragraphe">{{ paragraphe }}</p>
     <button class="primary__button">{{ button }}</button>
-  </section>
+  </div>
 </template>
 
 <script>
