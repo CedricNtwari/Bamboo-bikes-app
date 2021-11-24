@@ -1,5 +1,7 @@
 Short explanation of the things the PR is about...
 
+**[Design](<https://www.figma.com/file/cTsLEh7GONivtewaYwF2EY/Client-first-Template-7-(NGO)-(Community)>)**
+
 **[Ticket](url)**
 
 ### Review Instructions
