@@ -1,6 +1,6 @@
-# Bamboo Nuxt 3 Project
+# Bamboo Bikes Project
 
-Welcome to Bamboo Nuxt 3 repository ✨
+Welcome to Bamboo Bikes repository ✨
 
 INTRO:
 
@@ -41,3 +41,5 @@ yarn build
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).# nuxt3-app
 
 # Bamboo-nuxt3-app
+
+Design https://www.figma.com/file/cTsLEh7GONivtewaYwF2EY/Client-first-Template-7-(NGO)-(Community)
