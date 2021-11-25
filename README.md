@@ -12,7 +12,7 @@ This repository is just for this Project.
 
 - Clone repository
 - Ensure you have the latest LTS version of Node.js installed
-- Install dependencies with `bash yarn install`
+- Install dependencies with `yarn install`
 
 ## 📖 Documentation
 
