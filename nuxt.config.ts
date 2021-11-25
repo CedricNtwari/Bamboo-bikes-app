@@ -4,12 +4,6 @@ import { defineNuxtConfig } from 'nuxt3'
 export default defineNuxtConfig({
   script: true,
 
-  //   buildModules: ['@nuxtjs/style-resources'],
-
-  //   styleResources: {
-  //    // your settings here
-  //    scss: ['./styles/*.scss']
-  //   }
   vite: {
     css: {
       preprocessorOptions: {
