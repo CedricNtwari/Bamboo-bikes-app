@@ -1,26 +1,24 @@
 <template>
   <div class="footer">
     <footer class="footer__row">
-      <p class="footer__copyright">
-        Copyright @{{ currentYear }} All rights reserved
-      </p>
+      <p class="footer__copyright">Copyright @{{ currentYear }} All rights reserved</p>
     </footer>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Footer",
+  name: 'Footer',
 
   data() {
     return {
       currentYear: new Date().getFullYear(),
-    };
+    }
   },
-};
+}
 </script>
 
-<style scoped>
+<style lang="scss">
 .footer {
   position: fixed;
   padding: 10px 10px 0px 10px;
@@ -28,8 +26,9 @@ export default {
   width: 100%;
   height: 40px;
   background: grey;
-}
-.footer__copyright {
-  font-size: 14px;
+
+  &__copyright {
+    font-size: rem(14);
+  }
 }
 </style>
