@@ -1,6 +1,16 @@
 import { defineNuxtConfig } from 'nuxt3'
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
+// // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-  //   buildModules: ['@nuxtjs/svg'],
+  script: true,
+  
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/styles/index.scss";',
+        },
+      },
+    },
+  },
 })

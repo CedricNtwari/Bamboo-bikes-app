@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .footer {
   display: fixed;
   padding: 10px 10px 0px 10px;
@@ -37,8 +37,9 @@ export default {
   width: 100%;
   height: 100px;
   background: grey;
-}
-.footer__copyright {
-  font-size: 14px;
+
+  &__copyright {
+    font-size: rem(14);
+  }
 }
 </style>

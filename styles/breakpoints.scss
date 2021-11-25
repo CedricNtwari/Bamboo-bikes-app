@@ -1,0 +1,15 @@
+$breakpoint-mobile: 360px;
+$breakpoint-mobile-large: 412px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet-large: 1024px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-large: 1440px;
+$breakpoint-desktop-huge: 1800px;
+$mobile-up: 'min-width: #{$breakpoint-mobile}';
+$mobile-large-up: 'min-width: #{$breakpoint-mobile-large}';
+$tablet-up: 'min-width: #{$breakpoint-tablet}';
+$tablet-large-up: 'min-width: #{$breakpoint-tablet-large}';
+$desktop-up: 'min-width: #{$breakpoint-desktop}';
+$desktop-large-up: 'min-width: #{$breakpoint-desktop-large}';
+$desktop-huge-up: 'min-width: #{$breakpoint-desktop-huge}';
+$tablet-down: 'max-width: #{$breakpoint-tablet - 1}';
