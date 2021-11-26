@@ -1,9 +1,7 @@
 <template>
   <div class="footer">
     <footer class="footer__row">
-      <p class="footer__copyright">
-        Copyright @{{ currentYear }} All rights reserved
-      </p>
+      <p class="footer__copyright">Copyright @{{ currentYear }} All rights reserved</p>
       <div class="footer__icons">
         <a href="#"><img src="../assets/IconFacebook.svg" /></a>
         <a href="#"><img src="../assets/IconInstagram.svg" /></a>
@@ -16,8 +14,6 @@
 </template>
 
 <script>
-// import IconFacebook from '../assets/IconFacebook.svg'
-
 export default {
   name: 'Footer',
 
