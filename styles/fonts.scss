@@ -1,9 +1,31 @@
-@mixin font-roboto {
+$font-url-roboto-bold: 'https://fonts.googleapis.com/css2?';
+
+@mixin font-roboto-regular {
   @font-face {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+    src: url($font-url-roboto-bold);
+    font-display: swap;
+  }
+}
+
+@mixin font-roboto-medium {
+  @font-face {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    src: url($font-url-roboto-bold);
+    font-display: swap;
+  }
+}
+
+@mixin font-roboto-bold {
+  @font-face {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    src: url($font-url-roboto-bold);
     font-display: swap;
   }
 }
