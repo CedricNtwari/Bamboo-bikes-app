@@ -1,27 +1,42 @@
 <template>
-  <div class="nav">
+  <div class="navigation">
     <!-- TODO: add real logo -->
-    <nuxt-link to="/" class="nav__logo"><img src="" />Bike Logo</nuxt-link>
-    <nav class="nav__link">
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/About">About us</nuxt-link>
-      <nuxt-link to="/Contact">Contact</nuxt-link>
+    <nuxt-link to="/" class="navigation__logo"><img src="" />Bamboo Logo</nuxt-link>
+    <nav class="navigation__container">
+      <nuxt-link class="navigation__link" to="/"
+        ><span class="navigation__text">Home</span></nuxt-link
+      >
+      <nuxt-link class="navigation__link" to="/about"
+        ><span class="navigation__text">About us</span></nuxt-link
+      >
+      <nuxt-link class="navigation__link" to="/contact"
+        ><span class="navigation__text">Contact</span></nuxt-link
+      >
     </nav>
   </div>
 </template>
 
 <style lang="scss">
-@include font-roboto;
-
-.nav {
+.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-}
+  height: rem(67);
+  background: $color-green-light;
 
-.nav .nav-item.router-link-exact-active {
-  color: $color-green;
-  border-bottom: solid rem(2) $color-green;
+  &__link {
+    @include font-roboto-medium;
+
+    color: $color-secondary-text;
+    padding: 0 rem(20);
+
+    &.router-link-exact-active {
+      color: $color-black;
+    }
+  }
+
+  &__text {
+    @include underline-on-hover;
+  }
 }
 </style>
