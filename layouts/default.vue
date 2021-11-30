@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <transition
       enter-active-class="transition-opacity ease-linear duration-300"
       enter-class="opacity-0"
@@ -26,7 +26,6 @@ export default {
     NavBar,
     Footer,
   },
-  // layout: 'default',
 
   data() {
     return {

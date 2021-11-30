@@ -1,18 +1,12 @@
 <template>
-  <div>
-    <div class="absolute w-full flex bg-blue-100 z-40 inset-0 p-10">
-      <div class="overflow-y-auto">
-        <div>hello</div>
-        <div>world</div>
-      </div>
-      <div class="absolute top-0 right-0 pt-6 pr-10">
-        <button
-          @click="closeMobileMenu"
-          class="ml-1 flex items-center justify-center h-10 w-10 rounded-full hover:text-gray-700"
-        >
-          X
-        </button>
-      </div>
+  <div class="menu">
+    <div class="menu__top">
+      <button class="menu__button" @click="closeMobileMenu">X</button>
+    </div>
+    <div class="menu__center">
+      <a class="menu__link" href="/"><span class="menu__text">Home</span></a>
+      <a class="menu__link" href="/about"><span class="menu__text">About us</span></a>
+      <a class="menu__link" href="/contact"><span class="menu__text">Contact</span></a>
     </div>
   </div>
 </template>
@@ -28,3 +22,42 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.menu {
+  height: 100vh;
+
+  &__top {
+    padding: rem(10);
+    text-align: end;
+  }
+
+  &__button {
+    border: none;
+
+    &:hover {
+      background-color: $color-backbround;
+      color: $color-primary-text;
+    }
+  }
+
+  &__center {
+    @include font-roboto-medium;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 50%;
+    font-size: rem(30);
+  }
+
+  &__link {
+    color: $color-black;
+    padding-bottom: rem(10);
+  }
+
+  &__text {
+    @include underline-on-hover;
+  }
+}
+</style>
