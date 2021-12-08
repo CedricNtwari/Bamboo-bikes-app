@@ -1,0 +1,57 @@
+// Normalise + Sanitize CSS via PostCSS
+
+// Reset
+@import 'reset';
+
+// -- General styles
+
+html {
+  // text formatting
+  line-height: 1;
+  word-break: break-word;
+  tab-size: 2;
+  cursor: default;
+
+  // font antialias
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+// -- Basic form elements
+select {
+  padding-right: 1em;
+  background: no-repeat right center / 1em;
+  border-radius: 0;
+
+  // cross browser default select style
+  appearance: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  display: inline-flex;
+  align-items: center;
+  height: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  background: none;
+  border: 1px solid currentColor;
+  border-radius: 0;
+
+  // default style
+  appearance: button;
+}

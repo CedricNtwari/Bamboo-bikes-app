@@ -1,0 +1,148 @@
+// -- Reset
+*,
+::before,
+::after {
+  // sizing
+  box-sizing: border-box;
+
+  // corrects flex box content basis calculation
+  min-width: 0;
+  min-height: 0;
+
+  // enforces font and vertical alignment inheritance
+  // font-family: inherit;
+  line-height: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+
+  // no repeatable background by default
+  background-repeat: no-repeat;
+}
+
+// -- Assets
+img,
+iframe {
+  border-style: none;
+}
+
+svg {
+  overflow: visible;
+  fill: currentColor;
+}
+
+iframe,
+img,
+svg {
+  // avoid assets bigger than containers
+  max-width: 100%;
+  height: auto;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  // aligns with content
+  vertical-align: middle;
+}
+
+// -- Text
+p,
+blockquote,
+hr,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // Heading kerning pairs and ligature
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
+
+ul,
+ol,
+dl,
+dt,
+dd,
+li {
+  // No styles on lists
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  // remove the tapping delay on clickable elements
+  touch-action: manipulation;
+}
+
+// -- Form elements
+form,
+fieldset {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  margin: 0;
+
+  // enforces font inheritance for buttons and inputs fields
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+::-ms-expand {
+  display: none;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  margin: 0;
+  overflow: auto;
+  resize: vertical;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  padding: 0;
+}
+
+// -- Default cursors
+[aria-busy='true'] {
+  // normalise cursor on busy elements
+  cursor: progress;
+}
+
+[aria-controls] {
+  // normalise cursor on control elements
+  cursor: pointer;
+}
+
+[aria-disabled='true'],
+[disabled] {
+  cursor: not-allowed;
+}
