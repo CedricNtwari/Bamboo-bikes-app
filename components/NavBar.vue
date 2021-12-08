@@ -42,9 +42,7 @@ export default {
   background: $color-green-light;
 
   &__link {
-    @include font-roboto-medium;
     display: none;
-
     color: $color-secondary-text;
     padding: 0 rem(20);
 

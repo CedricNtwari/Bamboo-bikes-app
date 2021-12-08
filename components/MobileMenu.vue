@@ -34,16 +34,17 @@ export default {
 
   &__button {
     border: none;
+    background-color: $color-backbround;
+    border-radius: 50%;
+    height: rem(40);
 
     &:hover {
-      background-color: $color-backbround;
+      background-color: $color-secondary-text;
       color: $color-primary-text;
     }
   }
 
   &__center {
-    @include font-roboto-medium;
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -53,7 +54,7 @@ export default {
 
   &__link {
     color: $color-black;
-    padding-bottom: rem(10);
+    padding-bottom: rem(20);
   }
 
   &__text {
